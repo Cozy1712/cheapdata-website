@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1dec66e683.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="td/tdtps://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="css/signin.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h2>cozycheapdataservices</h2>
+        <p>Sign Up
+            <span class="design">
+                
+                <a href="index1.html"><span><i class="fa fa-facebook"></i></span></a>
+                <a href="www.twitter.com/@cozy1712"><span><i class="fa fa-twitter"></i></span></a>
+             
+            </span>
+        </p>
+
+
+        <form action="/wallet/SignUp.php" class="signin-form" method="POST">
+
+            <div class="form-group">
+                <label class="label" for="name">Account Type</label>
+            <select name="usertype" class="form-control" required>
+                <option value="">--Select--</option>
+                <option value="earner">Enduser Account (Enjoy All For Free)</option>
+            </select>
+            </div>
+    
+    
+            <div class="form-group">
+                <label class="label" for="name">First Name</label>
+                <input type="text" class="form-control" name="firstname" placeholder="Enter your First Name" required autocomplete="off">
+            </div>
+    
+            <div class="form-group">
+                <label class="label" for="name">Last Name</label>
+                <input type="text" class="form-control" name="lastname" placeholder="Enter your Last Name" required autocomplete="off">
+            </div>
+    
+            <div class="form-group">
+                <label class="label" for="name">Mobile No.</label>
+                <input type="tel" class="form-control" name="mobile" placeholder="Entre your Mobile No" required autocomplete="off">
+            </div>
+    
+            <div class="form-group">
+                <label class="label" for="name">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Enter your Username" required autocomplete="off">
+            </div>
+    
+            <div class="form-group">
+                <label class="label" for="name">Email Address</label>
+                <input type="email" name="email" placeholder="Email Address" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label class="label" for="password">Password</label>
+                <input type="hidden" name="refby"  required="required" class="form-control" maxlength="50" autocomplete="off" id="refby" readonly="" value="admin">
+                <input type="password" name="password" placeholder="Password" required autocomplete="off">
+                <span class="passlength">Minimum of 6chars</span><br>
+                <br><span class="passlength">Minimum of one Uppercase</span><br>
+                <span class="passlength">Minimum of one Number (0-9)</span>
+                <input type="password" name="cpassword" placeholder="Confirm Password" required autocomplete="off">
+          </div>
+          <div class="btn">
+                <button type="submit" name="submit">Create Account</button>
+           </div>
+            <div>
+                <div class="w-50">
+                    <a href="signin.html">Already a member ? Login</a>
+                </div>
+            </div>
+      </form>
+    </div>
+    
+</body>
+</html>
