@@ -389,11 +389,13 @@ background-color: goldenrod;
 
 
 
+
 /*------for respnsiveness------*/
-@media only screen and (min-width: 768px) and (max-width:520px){
+@media only screen and (min-width: 200px) and (max-width:520px){
     html{
         overflow-x: hidden;
         overflow-y: scroll;
+        scroll-behavior: smooth;
     }
 
 
@@ -503,59 +505,4 @@ background-color: goldenrod;
 
 
 
-}
-
-
-
-
-@media screen and (min-width: 768px){
-  :root{
-    --big-font-size: 3.5rem;
-    --h2-font-size: 2rem;
-    --normal-font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .nav__menu{
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    background-color: var(--second-color);
-    transition: .5s;
-  }
-}
-
-
-@media screen and (min-width: 768px){
-  body{
-    margin: 0;
-  }
-
-  nav{
-    height: calc(var(--header-height) + 1rem);
-  }
-  .nav__list{
-    display: flex;
-    padding-top: 0;
-  }
-  /*.nav__item{
-    margin-left: var(--mb-6);
-    margin-bottom: 0;
-  }*/
-  .nav__toggle{
-    display: none;
-    color: green;
-  }
- 
-}
-
-@media screen and (min-width: 1024px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
-  
 }
