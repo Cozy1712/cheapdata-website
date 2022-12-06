@@ -12,12 +12,13 @@ html{
 /*  header begin*/
 .header{
     width: 100%;
+    text-align: center;
     height: inherit;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
-    padding: 10px 10px 10px 10px ;
+    padding: 10px 10px 10px 50px ;
     background-color:#fff;
 }
 nav{
@@ -36,7 +37,7 @@ nav .logo{
     font-weight: bold;
     color: #54B435;
     line-height: 20px;
-    padding:20px;
+    margin-left: -20px;
     cursor: pointer;
     text-transform: uppercase;    
 }
@@ -45,7 +46,7 @@ nav .logo:hover{
 }
  nav ul{
     float: right;
-    margin-right: 150px;
+    margin-right: 450px;
     margin-top: -20px;
 }
  nav li{
@@ -57,7 +58,7 @@ nav a{
     text-decoration: none;
     color: #54B435;
     font-size: 15px;
-    padding: 10px 10px;
+    padding: 10px 8px;
     transition: 0.5s ease-in-out;
 }
 nav a:hover{
@@ -391,7 +392,7 @@ background-color: goldenrod;
 
 
 /*------for respnsiveness------*/
-@media only screen and (min-width: 200px) and (max-width:520px){
+@media only screen and (min-width: 200px) and (max-width:900px){
     html{
         overflow-x: hidden;
         overflow-y: scroll;
@@ -412,29 +413,26 @@ background-color: goldenrod;
         font-size: 15px;
     }
 
-    nav #icon{
+    /*nav #icon{
         display: flex;
         padding: 30px;
         color: #54B435;
         float: right;
-    }
+    }*/
     nav ul{
         position: fixed;
-        width: 60%;
         height: 100vh;
-        background: #fff;
+        background: #blue;
         top: 79px;
-        margin-right: -0;
-        right:-100%;
         text-align: center;
         transition: all .5s;
 
     }
     nav li{
         
-        display: block;
-        margin: 50px 0;
-        line-height: 5px;
+        display: inline-flex;
+        margin: 30px 0;
+        line-height: 2px;
     }
     nav a{  
         font-size: 15px;
