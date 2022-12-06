@@ -65,7 +65,7 @@ nav a:hover{
     text-decoration-line: underline;    
 }  
  nav #icon{
-    color: white;
+    color: green;
     font-size: 25px;
     line-height: 20px;
     float: right;
@@ -75,47 +75,6 @@ nav a:hover{
     display: none;
 }
 
-@media (max-width: 1048px){
-    label .logo{
-        font-size: 15px;
-        padding-left: 60px;
-    }
-    nav ul{
-        margin-right: 20px;
-    }
-    nav a{
-        font-size: 15px;
-    }
-}
-@media (max-width: 909px){
-    nav #icon{
-        display: block;
-    }
-    nav ul{
-        position: fixed;
-        width: 60%;
-        height: 100vh;
-        background: #fff;
-        top: 79px;
-        margin-right: -0;
-        right:-100%;
-        text-align: center;
-        transition: all .5s;
-
-    }
-    nav li{
-        
-        display: block;
-        margin: 50px 0;
-        line-height: 5px;
-    }
-    nav a{  
-        font-size: 15px;
-    }
-    nav ul.show{
-        right: 0;
-    }
-}
 /* header section begin*/
 .main{
     width: 100%;
@@ -130,7 +89,6 @@ nav a:hover{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
     background-position: center;
     background-size: cover;
 }
@@ -170,13 +128,13 @@ nav a:hover{
       text-align: center;
       display: flex;
       position: relative;
-      background-color: #ffffff74;
-      padding: 10px 10px 10px 200px;
+      background-color: none;
+      padding: 10px 10px 10px 100px;
 
 }
 .about img{
-    border-radius: 300px;
-    height: 600px;
+    border-radius: 250px;
+    height: 550px;
 }
 .row{
     margin-top: 50px;
@@ -220,19 +178,21 @@ h2 {
 }
 /*----section 2 begin ---*/
 .section2{
-    background-color:  #ffffff74;
+    background-color:none;
+    flex-direction: column;
     position: relative;
     padding: 50px;
 
 }
-.section2-img{
+#ourservices .section2-img{
     width: 100px;
     height: 100px;
     display: flex;
     gap: 50px;
-    padding: 20px 10px 10px 350px;
+    padding: 10px 10px 10px 300px;
 }
 .section2-img img{
+    text-align: center;
     border-radius: 10px;
     height:100px;
     width: 100px;
@@ -334,7 +294,7 @@ color: #fff;
 /*------------------------*/
 
 
-/*-----price------*/
+/*----- Affordable dataplan price------*/
 .plans h2{
     padding: 150px 0px 50px 0px;
     
@@ -362,7 +322,7 @@ color: #fff;
     background: #54B435;
     color: #fff;
     height: 390px;
-    width: 190px;
+    width: 180px;
     font-size: 18px;
     display: grid;
     gap: 20px;
@@ -371,29 +331,161 @@ color: #fff;
 }
 
 .text-cen-a{
-background-color: goldenrod;
+background-color:goldenrod;
     width: 100%;
-    margin: -20px;
     border-radius: 5px;
     text-align: center;
-    padding: 10px 90px 10px 60px;
+    padding: 10px 10px 10px 10px;
 }
 
 /*-- Frequently Asked Questions Section ---*/
 .faq-list{
+    text-decoration: none;
     text-align: center;
     justify-content: center;
     width: 100%;
     height: 600px;
-    background-color: #ff7200;
+}
+.faq-list ul{
+    list-style: none;
+    text-decoration: none;
+}
+.faq-list li{
+    text-decoration: none;
+}
+.collapse{
+padding: 10px;
+border:none;
+height: 200px;
+width: 800px;
+justify-content: center;
+background-color:  #54B435;
+}
+.collapse:hover, .collapse:focus{
+background-color: goldenrod;
 }
 .fade-up{
     text-align: center;
-    
+    position: relative;
 }
-.collapse{
+/* --------------------dropdown--------------------------*/
+.collapse show{
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
 
 }
-.collapse show{
+
+.collapse show p{
+    color: goldenrod;
+    padding: 12px 16px;
+    display: block;
+}
+/*.collapse show p:hover{ background-color: blue }*/
+
+
+
+
+
+/*------for respnsiveness------*/
+@media only screen and (min-width: 200px) and (max-width:520px){
+    html{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+     label .logo{
+        font-size: 15px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 15px;
+    }
+
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 60%;
+        height: 100vh;
+        background: #fff;
+        top: 79px;
+        margin-right: -0;
+        right:-100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    /* nav li{
+        
+        display: block;
+        margin: 50px 0;
+        line-height: 5px;
+    } */
+    nav a{  
+        font-size: 15px;
+    }
+    /* nav ul.show{
+        right: 10;
+    } */
+
+    .main{
+        width: 100%;
+        height: 100vh;
+        font-size: 25px;
+        background-position: center;
+        background-size: cover;
+        position:relative;
+        color: #fff;
+    }
+
+    #home img{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .about{
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        position: relative;
+        background-color: #ffffff74;
+        padding: 10px 10px 10px 60px;
+    }
+    .about img{
+        border-radius: 150px;
+        height: 350px;
+    }
+    .section2{
+        background-color:  #ffffff74;
+        flex-direction: column;
+        position: relative;
+        padding: 20px;
+    
+    }
+    #ourservices .section2-img{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        gap: 10px;
+    }
+    .section2-img img{
+        text-align: center;
+        border-radius: 10px;
+        height:100px;
+        width: 100px;
+    }
+
+
 
 }
